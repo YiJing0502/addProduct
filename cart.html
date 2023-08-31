@@ -20,7 +20,7 @@
 
     .left-menu {
       width: 279px;
-      background-color:white;
+      background-color: white;
       /* overflow-y: hidden; */
     }
 
@@ -44,12 +44,13 @@
             height:50px;
         } */
 
-    .list-big{
+    .list-big {
       max-width: 1288px !important;
     }
+
     @media (max-width:1375px) {
-      .list-big{
-        width:95%;
+      .list-big {
+        width: 95%;
         overflow-x: scroll;
       }
     }
@@ -61,7 +62,7 @@
       /* height: 522px; */
     }
 
-   
+
 
 
     .fa-bell {
@@ -146,7 +147,7 @@
       height: 41px;
       background-color: white;
       border: 1px solid rgba(0, 0, 0, 0.15);
-      z-index:-1;
+      z-index: -1;
     }
 
 
@@ -169,7 +170,7 @@
 
     .dropdown-menu-self {
       min-width: 111px !important;
-      z-index:1;
+      z-index: 1;
     }
 
     /* .dropdown-item:hover{
@@ -325,28 +326,31 @@
     }
 
     .appear {
-        display: none;
-      }
+      display: none;
+    }
 
 
     @media(max-width:1200px) {
       .appear {
         display: none;
-        
+
       }
     }
 
-    .d-block{
-      display:block;
-      z-index:9;
+    .d-block {
+      display: block;
+      z-index: 9;
     }
 
-    .img-size{
-      width:40px;
-      height:40px;
+    .img-size {
+      width: 40px;
+      height: 40px;
     }
- 
 
+    .form-check-input:checked {
+      background-color: rgb(10, 173, 10);
+      border-color: rgb(10, 173, 10);
+    }
   </style>
 
 
@@ -543,7 +547,7 @@
             </button>
           </h2>
           <!-- 第三的comming soon -->
-  
+
           <h2 class="accordion-header pe-none">
             <button class="accordion-button collapsed rounded-3 d-flex align-items-center text-body-tertiary"
               type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
@@ -568,9 +572,9 @@
           </h2>
         </div>
       </div>
-  
+
     </div>
-   
+
     <!-- 左邊欄位 -->
     <div class="left-menu l-height px-4 d-none d-xl-block">
       <div class="logo d-flex align-items-center"><svg width="160" height="31" viewBox="0 0 160 31" fill="none"
@@ -834,288 +838,124 @@
           <div class="col-12 offset-md-1 col-md-5   ">
             <div class="row">
               <div class="col-12">
-                <h2>Categories</h2>
+                <h2>新增產品</h2>
               </div>
               <div class="col-3"><span>Dashboard</span></div>
               <div class="col-6"><span class="text-black-50">Categories</span></div>
             </div>
 
           </div>
-          <div class="col-12 offset-md-3 col-md-3  d-flex">
-            <button type="button" class="btn ms-md-4 btn-success  btn-success-self">Add New Category</button>
-          </div>
+          
         </div>
         <!-- 主欄第二排 -->
-       
-        <!-- 購物清單 -->
-        <div class="list-big">
-          <div class="two-down row mb-2 m-0 py-5 px-4">
-            <div class="col-12 col-md-4  align-items-center">
-              <form class="d-flex search-self " role="search">
-                <input class="form-control  form-control-2 text-black-50" type="search" placeholder="Search Category"
-                  aria-label="Search">
-              </form>
+
+        <!-- 新增產品 -->
+        <div class="add-product">
+          <div class="container">
+            <div class="row d-flex flex-column">
+            <!--  產品名稱 -->
+            <div class="col">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">產品名稱</span>
+                <input type="text" class="form-control" placeholder="輸入產品名稱" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
             </div>
-            <div class="col-12 offset-md-6 col-md-2 mt-2 mt-md-0">
-              <div class="dropdown ">
-                <a class="btn btn-secondary w-100  py-1 dropdown-self dropdown-toggle text-black " href="#" role="button"
-                  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                  Status
-                </a>
-  
-                <ul class="dropdown-menu rounded-4 dropdown-menu-self py-0 w-100" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item rounded-top-4 py-0 " href="#">Status</a></li>
-                  <li><a class="dropdown-item py-0" href="#">Published</a></li>
-                  <li><a class="dropdown-item rounded-bottom-4 py-0" href="#">Unpublished</a></li>
-                </ul>
+            <!-- 產品圖片 -->
+            <div class="col">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">產品圖片</span>
+                <input type="file" class="form-control" placeholder="輸入產品圖片" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <!-- 產品價格 -->
+            <div class="col">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">產品價格</span>
+                <input type="number" class="form-control" placeholder="輸入產品價格" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <!-- 顯示狀態 -->
+            <div class="col">
+              <div class="input-group mb-3 ">
+                <span class="input-group-text" id="basic-addon1">顯示狀態</span>
+                <div class="form-control d-flex">
+                  <div class="form-check me-3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      上架
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      不上架
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- 產品描述 -->
+            <div class="col">
+              <div class="input-group">
+                <span class="input-group-text">產品描述</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
               </div>
             </div>
           </div>
-          <div class="list  mb-self">
-            <!-- 第一行 -->
-            <div class="row w-100  m-0 text-secondary fs-14-self py-2 bg-line">
-              <div class="col-1 d-flex justify-content-center align-items-center"><input type="checkbox" class="input-size input-1"></input></div>
-              <div class="col-1 d-flex justify-content-start align-items-center">Image</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">OrderName</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">Customer</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">Date & TIme</div>
-              <div class="col-1 d-flex justify-content-center align-items-center">Payment</div>
-              <div class="col-1 d-flex justify-content-center align-items-center">Status</div>
-              <div class="col-1 d-flex justify-content-center align-items-center">Amount</div>
-              <div class="col-1 d-flex justify-content-center align-items-center"></div>
+          <div class="row mt-4 ">
+            <div class="col d-flex justify-content-end">
+              <!-- 取消按鈕 -->
+              <button type="button" class="btn btn-outline-success me-3">取消新增</button>
+              <!-- 新增按鈕 -->
+              <button type="button" class="btn btn-outline-success">新增產品</button>
             </div>
-            <!-- 第二行 -->
-            <div class="row w-100   m-0 text-secondary fs-14-self py-2">
-              <div class="col-1 d-flex justify-content-center align-items-center"><input type="checkbox" class="input-size"></input></div>
-              <div class="col-1 d-flex justify-content-start align-items-center"><img src="./photo/product/1-removebg.png" class="img-size"></div>
-              <div class="col-2 d-flex justify-content-start align-items-center">FC#1007</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">Jennifer Sullivan</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">01 May 2023 (10:12 am)</div>
-              <div class="col-1 d-flex justify-content-start align-items-center">Paypal</div>
-              <div class="col-1 d-flex justify-content-center align-items-center"><span class="px-1 bg-green rounded">Success</span></div>
-              <div class="col-1 d-flex justify-content-center align-items-center">$12.99</div>
-              <div class="col-1 d-flex justify-content-center align-items-center">
-                <div class="btn-group ">
-                  <button type="button" class="btn border-0 rounded-circle text-secondary btn-self dropdown-toggle"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-trash-can"></i>&nbsp;&nbsp;Delete</a></li>
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-pen-to-square"></i>&nbsp;&nbsp;Edit</a></li>
 
-                </div>
-              </div>
-            </div>
-            <!-- 第三行 -->
-            <div class="row w-100   m-0 text-secondary fs-14-self py-2">
-              <div class="col-1 d-flex justify-content-center align-items-center"><input type="checkbox" class="input-size"></input></div>
-              <div class="col-1 d-flex justify-content-start align-items-center"><img src="./photo/product/2-removebg.png" class="img-size"></div>
-              <div class="col-2 d-flex justify-content-start align-items-center">FC#1006</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">Willie Hanson</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">20 April 2023 (9:20 am)</div>
-              <div class="col-1 d-flex justify-content-start align-items-center">COD</div>
-              <div class="col-1 d-flex justify-content-center align-items-center"><span class="px-1 bg-green rounded">Success</span></div>
-              <div class="col-1 d-flex justify-content-center align-items-center">$8.19</div>
-              <div class="col-1 d-flex justify-content-center align-items-center">
-                <div class="btn-group ">
-                  <button type="button" class="btn border-0 rounded-circle text-secondary btn-self dropdown-toggle"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-trash-can"></i>&nbsp;&nbsp;Delete</a></li>
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-pen-to-square"></i>&nbsp;&nbsp;Edit</a></li>
-                </div>
-
-              </div>
-            </div>
-            <!-- 第四行 -->
-            <div class="row w-100   m-0 text-secondary fs-14-self py-2">
-              <div class="col-1 d-flex justify-content-center align-items-center"><input type="checkbox" class="input-size"></input></div>
-              <div class="col-1 d-flex justify-content-start align-items-center"><img src="./photo/product/3-removebg.png" class="img-size"></div>
-              <div class="col-2 d-flex justify-content-start align-items-center">FC#1005</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">	Dori Stewart</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">11 March 2023 (7:12 pm)</div>
-              <div class="col-1 d-flex justify-content-start align-items-center">Paypal</div>
-              <div class="col-1 d-flex justify-content-center align-items-center"><span class="px-1 bg-green rounded">Pending	</span></div>
-              <div class="col-1 d-flex justify-content-center align-items-center">$8.19</div>
-              <div class="col-1 d-flex justify-content-center align-items-center">
-                <div class="btn-group ">
-                  <button type="button" class="btn border-0 rounded-circle text-secondary btn-self dropdown-toggle"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-trash-can"></i>&nbsp;&nbsp;Delete</a></li>
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-pen-to-square"></i>&nbsp;&nbsp;Edit</a></li>
-                </div>
-
-              </div>
-            </div>
-            <!-- 第五行 -->
-            <div class="row w-100   m-0 text-secondary fs-14-self py-2">
-              <div class="col-1 d-flex justify-content-center align-items-center"><input type="checkbox" class="input-size"></input></div>
-              <div class="col-1 d-flex justify-content-start align-items-center"><img src="./photo/product/4-removebg.png" class="img-size"></div>
-              <div class="col-2 d-flex justify-content-start align-items-center">FC#1004</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">Ezekiel Rogerson</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">	09 March 2023 (6:23 pm)</div>
-              <div class="col-1 d-flex justify-content-start align-items-center">Stripe</div>
-              <div class="col-1 d-flex justify-content-center align-items-center"><span class="px-1 bg-green rounded">Success</span></div>
-              <div class="col-1 d-flex justify-content-center align-items-center">$23.11</div>
-              <div class="col-1 d-flex justify-content-center align-items-center">
-                <div class="btn-group ">
-                  <button type="button" class="btn border-0 rounded-circle text-secondary btn-self dropdown-toggle"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-trash-can"></i>&nbsp;&nbsp;Delete</a></li>
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-pen-to-square"></i>&nbsp;&nbsp;Edit</a></li>
-                </div>
-
-              </div>
-            </div>
-            <!-- 第六行 -->
-            <div class="row w-100   m-0 text-secondary fs-14-self py-2">
-              <div class="col-1 d-flex justify-content-center align-items-center"><input type="checkbox" class="input-size"></input></div>
-              <div class="col-1 d-flex justify-content-start align-items-center"><img src="./photo/product/5-removebg.png" class="img-size"></div>
-              <div class="col-2 d-flex justify-content-start align-items-center">FC#1003</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">Maria Roux</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">18 Feb 2022 (12:20 pm)</div>
-              <div class="col-1 d-flex justify-content-start align-items-center">COD</div>
-              <div class="col-1 d-flex justify-content-center align-items-center"><span class="px-1 bg-green rounded">Success</span></div>
-              <div class="col-1 d-flex justify-content-center align-items-center">$2.00</div>
-              <div class="col-1 d-flex justify-content-center align-items-center">
-                <div class="btn-group ">
-                  <button type="button" class="btn border-0 rounded-circle text-secondary btn-self dropdown-toggle"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-trash-can"></i>&nbsp;&nbsp;Delete</a></li>
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-pen-to-square"></i>&nbsp;&nbsp;Edit</a></li>
-                </div>
-
-              </div>
-            </div>
-            <!-- 第七行 -->
-            <!-- FC#1002	Robert Donald			 -->
-            <div class="row w-100   m-0 text-secondary fs-14-self py-2">
-              <div class="col-1 d-flex justify-content-center align-items-center"><input type="checkbox" class="input-size"></input></div>
-              <div class="col-1 d-flex justify-content-start align-items-center"><img src="./photo/product/6-removebg.png" class="img-size"></div>
-              <div class="col-2 d-flex justify-content-start align-items-center">FC#1002</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">Robert Donald	</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">12 Feb 2022 (4:56 pm)</div>
-              <div class="col-1 d-flex justify-content-start align-items-center">	Paypal</div>
-              <div class="col-1 d-flex justify-content-center align-items-center"><span class="px-1 bg-pink rounded">Cancel</span></div>
-              <div class="col-1 d-flex justify-content-center align-items-center">$56.00</div>
-              <div class="col-1 d-flex justify-content-center align-items-center">
-                <div class="btn-group ">
-                  <button type="button" class="btn border-0 rounded-circle text-secondary btn-self dropdown-toggle"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-trash-can"></i>&nbsp;&nbsp;Delete</a></li>
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-pen-to-square"></i>&nbsp;&nbsp;Edit</a></li>
-                </div>
-
-              </div>
-            </div>
-            <!-- 第八行 -->
-            <div class="row w-100   m-0 text-secondary fs-14-self py-2">
-              <div class="col-1 d-flex justify-content-center align-items-center"><input type="checkbox" class="input-size"></input></div>
-              <div class="col-1 d-flex justify-content-start align-items-center"><img src="./photo/product/7-removebg.png" class="img-size">
-              </div>
-              <div class="col-2 d-flex justify-content-start align-items-center">FC#1001</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">Diann Watson</div>
-              <div class="col-2 d-flex justify-content-start align-items-center">22 Jan 2023 (1:20 pm)</div>
-              <div class="col-1 d-flex justify-content-start align-items-center">	Paypal</div>
-              <div class="col-1 d-flex justify-content-center align-items-center"><span class="px-1 bg-green rounded">Success</span></div>
-              <div class="col-1 d-flex justify-content-center align-items-center">$23.00</div>
-              <div class="col-1 d-flex justify-content-center align-items-center">
-                <div class="btn-group ">
-                  <button type="button" class="btn border-0 rounded-circle text-secondary btn-self dropdown-toggle"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-trash-can"></i>&nbsp;&nbsp;Delete</a></li>
-                    <li><a class="dropdown-item text-light-emphasis  fs-14-self lh-lg" href="#"><i
-                          class="fa-regular fa-pen-to-square"></i>&nbsp;&nbsp;Edit</a></li>
-                </div>
-
-              </div>
-            </div>
           </div>
+          </div>
+          
         </div>
-        <div class="row no-hover py-4 px-3 align-items-center">
-          <div class="col-6 col-md-6 fs-14-self text-secondary">Showing 1 to 8 of 12 entries</div>
-          <div class="col-6 offset-md-2 col-md-4">
-            <div aria-label="Page navigation example">
-              <ul class="pagination  px-0 m-0 ">
-                <li class="page-item "><a class="page-link py-2 rounded-2 text-secondary" href="#">Previous</a></li>
-                <li class="page-item "><a class="page-link py-2 ms-1 rounded-2 text-secondary " href="#">1</a></li>
-                <li class="page-item"><a class="page-link py-2 ms-1 rounded-2 text-secondary" href="#">2</a></li>
-                <li class="page-item"><a class="page-link py-2 ms-1 rounded-2 text-secondary" href="#">3</a></li>
-                <li class="page-item"><a class="page-link py-2 ms-1 rounded-2 text-secondary" href="#">Next</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
       </div>
-
 
     </div>
 
 
+  </div>
 
-    <script>
-      // 縮小時左邊侧欄出現
-      {
-        let appear = document.querySelector('.appear');
+
+
+  <script>
+    // 縮小時左邊侧欄出現
+    {
+      let appear = document.querySelector('.appear');
       let faIndent = document.querySelector('.fa-indent');
       console.log(appear);
 
       faIndent.addEventListener('click', () => {
         appear.classList.toggle('d-block');
       })
-      }
+    }
 
-      // 購物清單上點選第一行的checkbox後面的都會被勾選，或取消勾選
-     {
+    // 購物清單上點選第一行的checkbox後面的都會被勾選，或取消勾選
+    {
       let inputAll = document.querySelector('.input-1');
       let inputSize = document.querySelectorAll('.input-size');
 
       inputAll.addEventListener('change', function () {
-      const isChecked = this.checked;
+        const isChecked = this.checked;
 
-    
-      inputSize.forEach(checkbox => {
-        checkbox.checked = isChecked;
+
+        inputSize.forEach(checkbox => {
+          checkbox.checked = isChecked;
+        });
       });
-    });
     }
-   
-
-    </script>
 
 
+  </script>
 
 
 
@@ -1125,9 +965,11 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 
 </body>
 
